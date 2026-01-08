@@ -30,39 +30,39 @@ help:
 .PHONY: validate
 validate:
 	@echo "🔍 Running CI Artifact Validation..."
-	$(PYTHON) OPTIM-FRAMEWORK/I-.INTELLIGENT/scripts/validate_artifacts.py --path $(CI_PATH) --check-links
+	$(PYTHON) OPTIM-FRAMEWORK/I-INTELLIGENT/scripts/validate_artifacts.py --path $(CI_PATH) --check-links
 
 .PHONY: validate-json
 validate-json:
 	@echo "🔍 Running CI Artifact Validation (JSON output)..."
-	$(PYTHON) OPTIM-FRAMEWORK/I-.INTELLIGENT/scripts/validate_artifacts.py --path $(CI_PATH) --check-links --output-format json
+	$(PYTHON) OPTIM-FRAMEWORK/I-INTELLIGENT/scripts/validate_artifacts.py --path $(CI_PATH) --check-links --output-format json
 
 .PHONY: evidence-status
 evidence-status:
 	@echo "📊 Checking Evidence Status..."
-	$(PYTHON) OPTIM-FRAMEWORK/I-.INTELLIGENT/scripts/evidence_tracker.py $(CI_PATH)
+	$(PYTHON) OPTIM-FRAMEWORK/I-INTELLIGENT/scripts/evidence_tracker.py $(CI_PATH)
 
 .PHONY: evidence-csv
 evidence-csv:
 	@echo "📊 Exporting Evidence Status to CSV..."
-	$(PYTHON) OPTIM-FRAMEWORK/I-.INTELLIGENT/scripts/evidence_tracker.py $(CI_PATH) --export-csv evidence-status.csv
+	$(PYTHON) OPTIM-FRAMEWORK/I-INTELLIGENT/scripts/evidence_tracker.py $(CI_PATH) --export-csv evidence-status.csv
 	@echo "📄 Evidence status exported to evidence-status.csv"
 
 .PHONY: evidence-checklist
 evidence-checklist:
 	@echo "📋 Generating Evidence Checklist..."
-	$(PYTHON) OPTIM-FRAMEWORK/I-.INTELLIGENT/scripts/evidence_tracker.py $(CI_PATH) --checklist evidence-checklist.md
+	$(PYTHON) OPTIM-FRAMEWORK/I-INTELLIGENT/scripts/evidence_tracker.py $(CI_PATH) --checklist evidence-checklist.md
 	@echo "📄 Evidence checklist generated: evidence-checklist.md"
 
 .PHONY: requirements
 requirements:
 	@echo "📋 Analyzing Requirements Coverage..."
-	$(PYTHON) OPTIM-FRAMEWORK/I-.INTELLIGENT/scripts/requirements_coverage.py $(CI_PATH)
+	$(PYTHON) OPTIM-FRAMEWORK/I-INTELLIGENT/scripts/requirements_coverage.py $(CI_PATH)
 
 .PHONY: traceability
 traceability:
 	@echo "🔗 Generating Requirements Traceability Matrix..."
-	$(PYTHON) OPTIM-FRAMEWORK/I-.INTELLIGENT/scripts/requirements_coverage.py $(CI_PATH) --traceability traceability-matrix.md
+	$(PYTHON) OPTIM-FRAMEWORK/I-INTELLIGENT/scripts/requirements_coverage.py $(CI_PATH) --traceability traceability-matrix.md
 	@echo "📄 Traceability matrix generated: traceability-matrix.md"
 
 # Combined reports
@@ -114,8 +114,8 @@ check-deps:
 .PHONY: test-scripts
 test-scripts: check-deps
 	@echo "🧪 Testing validation scripts..."
-	$(PYTHON) OPTIM-FRAMEWORK/I-.INTELLIGENT/scripts/validate_artifacts.py --help > /dev/null && echo "✅ validate_artifacts.py OK"
-	$(PYTHON) OPTIM-FRAMEWORK/I-.INTELLIGENT/scripts/evidence_tracker.py --help > /dev/null && echo "✅ evidence_tracker.py OK"
-	$(PYTHON) OPTIM-FRAMEWORK/I-.INTELLIGENT/scripts/requirements_coverage.py --help > /dev/null && echo "✅ requirements_coverage.py OK"
+	$(PYTHON) OPTIM-FRAMEWORK/I-INTELLIGENT/scripts/validate_artifacts.py --help > /dev/null && echo "✅ validate_artifacts.py OK"
+	$(PYTHON) OPTIM-FRAMEWORK/I-INTELLIGENT/scripts/evidence_tracker.py --help > /dev/null && echo "✅ evidence_tracker.py OK"
+	$(PYTHON) OPTIM-FRAMEWORK/I-INTELLIGENT/scripts/requirements_coverage.py --help > /dev/null && echo "✅ requirements_coverage.py OK"
 	$(PYTHON) tools/validate_config_index.py > /dev/null && echo "✅ validate_config_index.py OK"
 	@echo "✅ All scripts tested successfully"

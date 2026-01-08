@@ -1,22 +1,3 @@
-# Amedeo Pelliccia
-
-**Aerospace Systems Engineer • Digital-Twin Architecture • Risk-Optimized Design**  
-Project Coordinator, Capgemini Engineering (Madrid) • Founder, GAIA Quantum Aerospace  
-Master's Candidate, Project Management (EAE Business School, 2025–2028)
-
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Robbbo-T)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/robbbo-t)
-
----
-
-I am an aerospace systems engineer architecting the next generation of certifiable, sustainable aircraft. My work bridges the gap between rigorous, safety-critical engineering and advanced computational paradigms like digital twins, AI, and quantum-inspired optimization. The goal is to transform aerospace complexity into computational certainty. My primary focus is the development of the **AMPEL360-BWB-Q** framework, a comprehensive system for designing the future of flight.
-
-## 🚀 **Interactive Framework Explorer**
-
-**[Launch OPTIM Framework Navigator →](OPTIM-FRAMEWORK/index.html)**
-
-Explore the complete AMPEL360 framework through our interactive web interface featuring visual navigation, smart search, and real-time domain exploration.
-
 ## Featured Project: AMPEL360-BWB-Q
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -87,7 +68,7 @@ OPTIME-FRAMEWORK/
 │   ├── L1-LOGISTICS/
 │   ├── L2-LINKS/
 │   ├── I-INFRASTRUCTURES/
-│   ├── C1-COMPUTING/
+│   ├── C1-COCKPIT.CABIN,CARGO/
 │   ├── C2-CRYOGENICS/
 │   ├── I2-INTELLIGENCE/
 │   └── A2-AIRPORTS/
@@ -120,7 +101,7 @@ OPTIME-FRAMEWORK/
 |     **L1-LOGISTICS**     | Logistics, Manufacturing & Supply                        |      13 |
 |       **L2-LINKS**       | Links, Communications & Navigation                       |      10 |
 |   **I-INFRASTRUCTURES**  | Infrastructures (ATM, hangars, facilities, corobotics)   |       8 |
-|     **C1-COMPUTING**     | Computing & Control                                      |      10 |
+|     **C1-COCKPIT, CABIN, CARGO**     | COCKPIT, CABIN  AND CARGO                                      |      10 |
 |     **C2-CRYOGENICS**    | Cryogenics, Quantum & Hydrogen Interfaces                |       8 |
 |    **I2-INTELLIGENCE**   | Intelligence                                             |       8 |
 |      **A2-AIRPORTS**     | Airports Adaptation                                      |       5 |
